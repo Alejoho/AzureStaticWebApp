@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandro Hernández O'Reilly" />
+
+  <title>Ally's Portfolio</title>
+  <meta name="description" content="Home page for Aly's portfolio, including samples and contact info" />
+
+  <meta property="og:title" content="Ally Reynolds's Portfolio" />
+  <meta property="og:description" content="Home page for Aly's portfolio, including samples and contact info" />
+
+  <meta property="og:url" content="https://alejoho.github.io/Ally-s-Portfolio/" />
+  <link rel="canonical" href="https://alejoho.github.io/Ally-s-Portfolio/" />
+
+  <meta property="og:image" content="https://alejoho.github.io/Ally-s-Portfolio/img/Ally.png" />
+  <meta property="og:image:alt" content="A smilling Ally Reinolds" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+  <main>
+    <div class="hero">
+      <h1>Hi, I'm<br />Ally</h1>
+      <img srcset="img/Ally2-600w.webp 600w,
+        img/Ally2-768w.webp 768w,
+        img/Ally2-992w.webp 992w,
+        img/Ally2-1200w.webp 1200w" sizes="(max-width: 1100px) 100vw, 1100px" src="img/Ally2.png"
+        alt="A picture of me smiling." width="1200" height="763" />
+    </div>
+    <div id="contact-me">
+      <h2>This is how to contact me</h2>
+      <form id="contact-form" action="" method="post">
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" required />
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" required />
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <div>
+          <button type="submit">Contact Ally</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div id="portfolio-section">
+      <div>
+        <h2>This is some of my work</h2>
+        <a href="portfolio.html">see more</a>
+      </div>
+      <img srcset="img/LandingPageCollage-600w.webp 600w,
+        img/LandingPageCollage-768w.webp 768w,
+        img/LandingPageCollage-992w.webp 992w,
+        img/LandingPageCollage-1200w.webp 1200w" sizes="(max-width: 1100px) 100vw, 1100px"
+        src="img/LandingPageCollage.png"
+        alt="My portfolio collage, including images of my adoption campaign, restaurant site, and kids sports site."
+        width="1200" height="833" />
+    </div>
+    <div id="my-story">
+      <h2>This is my story</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Eum minima commodi explicabo. Voluptatibus quaerat
+        doloribus, ut eius pariatur, fugiat quis soluta in quasi
+        officia excepturi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consequatur ipsum nulla dolorum accusantium expedita ex
+        voluptatum non quam facere eveniet.
+      </p>
+    </div>
+  </main>
+  <footer>&copy; <span id="copyright-year">2025</span> by Ally Reynolds.</footer>
+  <script src="js/app.js"></script>
+  <script>app.homepage();
+
+  </script>
+</body>
+
+</html>
